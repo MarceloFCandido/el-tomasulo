@@ -18,14 +18,16 @@ module instrQueue(CLK, CLR, cheio, vazio, adc, rtr, instrIn, instrOut);
 			frente = 3'b0;
 			tras = 3'b0;
 		end else begin
-			if (adc) begin
+			if (adc && ~cheio) begin
 				instrs[tras] = instrIn;
 				iValid[tras] = 1'b1;
 				tras = tras + 1'b1;
 			end else if (rtr) begin
-				instrOut = instrs[frente];
-				iValid[frente] = 1'b0;
-				frente = frente + 1'b1;
+				if (~vazio) begin
+					instrOut = instrs[frente];
+					iValid[frente] = 1'b0;
+					frente = frente + 1'b1;
+				end
 			end
 		end
 	end
