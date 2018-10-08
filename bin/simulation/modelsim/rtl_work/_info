@@ -20,15 +20,15 @@ ninstr@queue
 !i10b 1
 !s100 EB[=KEKU3C`557Y39V`cV0
 !s85 0
-!s108 1539020542.072000
+!s108 1539024534.199000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v|
 !s101 -O0
 vprogramCounter
-IOkf0;fHQH>GOX8M?bKG4W2
+Ii7e;i;EUjXYPCVYgge12z2
 V:kLFC9^ED@fdoR:8obzeJ1
 R1
-w1539016147
+w1539024458
 8C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
 FC:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
 L0 1
@@ -39,9 +39,9 @@ R3
 nprogram@counter
 R4
 !i10b 1
-!s100 Gjz?dmRmOX3T9>TFd^6VN3
+!s100 1ZMIZ19^]8I^kOiJXP_Go1
 !s85 0
-!s108 1539020541.772000
+!s108 1539024533.947000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v|
 !s101 -O0
@@ -59,17 +59,17 @@ R2
 r1
 !s85 0
 31
-!s108 1539020542.462000
+!s108 1539024534.676000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v|
 !s101 -O0
 R3
 R4
 vtomasulim
-ILgJ>ZHMnE5hDJce=G?1J?1
-Vng1AohP3:`9hi;E_]9D:H2
+I_iO:cbAH_@0Sz=@nn?>n91
+VYLVL4>0c>`Okhkl_Vg[7J3
 R1
-w1539020428
+w1539022946
 8C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
 FC:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
 L0 1
@@ -79,9 +79,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 z]lXdz9zPDgb?fbNFnzWO0
+!s100 7oWR>IF<[S`OSg6O:X1eU2
 !s85 0
-!s108 1539020542.260000
+!s108 1539024534.443000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v|
 !s101 -O0

@@ -2,7 +2,7 @@ module programCounter(CLK, CLR, incr, addrOut);
 	input CLK, CLR, incr;
 	output reg [4:0] addrOut;
 	
-	always @(posedge CLK, posedge CLR) begin
+	always @(negedge CLK, posedge CLR) begin
 		if (CLR) begin
 			addrOut = 5'b0;
 		end else if (incr) begin

@@ -1,6 +1,8 @@
 |tomasulim
 CLK => CLK.IN3
 CLR => CLR.IN2
+adc => adc.IN1
+rtr => rtr.IN1
 
 
 |tomasulim|ram1pm:instrUnit

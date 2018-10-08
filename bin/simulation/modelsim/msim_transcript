@@ -44,9 +44,6 @@ vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_tra
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # Loading work.programCounter
 # Loading work.instrQueue
-# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'instrOut'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v(1).
-# 
-#         Region: /tomasulim/iq
 # do tomasulim_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -80,18 +77,13 @@ vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_tra
 # Top level modules:
 # 	ram1pm
 # 
-wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/tomasulim/CLK
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/tomasulim/CLR
-add wave -position end  sim:/tomasulim/addrOut
-add wave -position end  sim:/tomasulim/q
-add wave -position end  sim:/tomasulim/cheio
-add wave -position end  sim:/tomasulim/vazio
-add wave -position end  sim:/tomasulim/adc
-add wave -position end  sim:/tomasulim/rtr
-add wave -position end  sim:/tomasulim/instrOut
-wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10ps Edit:/tomasulim/CLR
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/IF.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+add wave -position 4 -format Logic -height 17 -editable 2 Edit:/tomasulim/adc
+add wave -position 5 -format Logic -height 17 -editable 2 Edit:/tomasulim/rtr
+add wave -position 3 -format Logic -height 17 -editable 2 Edit:/tomasulim/CLK
+add wave -position 4 -format Logic -height 17 -editable 2 Edit:/tomasulim/CLR
 run -all
 # ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
 #    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/IF.do
-wave editwrite -file C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/IF.do -append

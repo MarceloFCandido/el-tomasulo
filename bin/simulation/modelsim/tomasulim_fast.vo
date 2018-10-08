@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "10/08/2018 14:41:01"
+// DATE "10/08/2018 15:48:13"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -30,13 +30,19 @@
 
 module tomasulim (
 	CLK,
-	CLR);
+	CLR,
+	adc,
+	rtr);
 input 	CLK;
 input 	CLR;
+input 	adc;
+input 	rtr;
 
 // Design Ports Information
 // CLK	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // CLR	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// adc	=>  Location: PIN_T7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// rtr	=>  Location: PIN_AA18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -126,6 +132,78 @@ defparam \CLR~I .output_async_reset = "none";
 defparam \CLR~I .output_power_up = "low";
 defparam \CLR~I .output_register_mode = "none";
 defparam \CLR~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_T7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \adc~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(adc));
+// synopsys translate_off
+defparam \adc~I .input_async_reset = "none";
+defparam \adc~I .input_power_up = "low";
+defparam \adc~I .input_register_mode = "none";
+defparam \adc~I .input_sync_reset = "none";
+defparam \adc~I .oe_async_reset = "none";
+defparam \adc~I .oe_power_up = "low";
+defparam \adc~I .oe_register_mode = "none";
+defparam \adc~I .oe_sync_reset = "none";
+defparam \adc~I .operation_mode = "input";
+defparam \adc~I .output_async_reset = "none";
+defparam \adc~I .output_power_up = "low";
+defparam \adc~I .output_register_mode = "none";
+defparam \adc~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_AA18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \rtr~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(rtr));
+// synopsys translate_off
+defparam \rtr~I .input_async_reset = "none";
+defparam \rtr~I .input_power_up = "low";
+defparam \rtr~I .input_register_mode = "none";
+defparam \rtr~I .input_sync_reset = "none";
+defparam \rtr~I .oe_async_reset = "none";
+defparam \rtr~I .oe_power_up = "low";
+defparam \rtr~I .oe_register_mode = "none";
+defparam \rtr~I .oe_sync_reset = "none";
+defparam \rtr~I .operation_mode = "input";
+defparam \rtr~I .output_async_reset = "none";
+defparam \rtr~I .output_power_up = "low";
+defparam \rtr~I .output_register_mode = "none";
+defparam \rtr~I .output_sync_reset = "none";
 // synopsys translate_on
 
 endmodule
