@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tomasulim
-Mon Oct 08 15:47:55 2018
+Tue Oct 09 10:47:13 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -19,10 +19,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  11. Source assignments for ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated
  12. Parameter Settings for User Entity Instance: ram1pm:instrUnit|altsyncram:altsyncram_component
  13. altsyncram Parameter Settings by Entity Instance
- 14. Port Connectivity Checks: "instrQueue:iq"
- 15. Port Connectivity Checks: "ram1pm:instrUnit"
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "instrRegister:IR"
+ 15. Port Connectivity Checks: "instrQueue:iq"
+ 16. Port Connectivity Checks: "ram1pm:instrUnit"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -48,7 +49,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 08 15:47:55 2018           ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 09 10:47:13 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; tomasulim                                       ;
 ; Top-level Entity Name              ; tomasulim                                       ;
@@ -57,7 +58,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 4                                               ;
+; Total pins                         ; 5                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -170,6 +171,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; ../src/instr-queue.v             ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v                    ;         ;
 ; ../src/tomasulim.v               ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v                      ;         ;
 ; ../src/ram1pm.v                  ; yes             ; User Wizard-Generated File   ; C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v                         ;         ;
+; ../src/instrRegister.v           ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v                  ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -203,7 +205,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 4     ;
+; I/O pins                                    ; 5     ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 +---------------------------------------------+-------+
 
@@ -213,7 +215,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |tomasulim                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |tomasulim          ; work         ;
+; |tomasulim                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |tomasulim          ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -346,13 +348,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "instrQueue:iq"                                                                          ;
+; Port Connectivity Checks: "instrRegister:IR"                                                                       ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
-; vazio    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; instrOut ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "instrQueue:iq"                                                                       ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; vazio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------+
@@ -380,7 +390,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 08 15:47:52 2018
+    Info: Processing started: Tue Oct 09 10:47:10 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tomasulim -c tomasulim
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/program-counter.v
@@ -391,6 +401,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: tomasulim
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/ram1pm.v
     Info (12023): Found entity 1: ram1pm
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/instrregister.v
+    Info (12023): Found entity 1: instrRegister
 Info (12127): Elaborating entity "tomasulim" for the top level hierarchy
 Info (12128): Elaborating entity "ram1pm" for hierarchy "ram1pm:instrUnit"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram1pm:instrUnit|altsyncram:altsyncram_component"
@@ -416,6 +428,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_jpe1" for hierarchy "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated"
 Info (12128): Elaborating entity "programCounter" for hierarchy "programCounter:pc"
 Info (12128): Elaborating entity "instrQueue" for hierarchy "instrQueue:iq"
+Info (12128): Elaborating entity "instrRegister" for hierarchy "instrRegister:IR"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[0]"
@@ -437,17 +450,18 @@ Warning (14284): Synthesized away the following node(s):
 Info (17049): 19 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLK"
     Warning (15610): No output dependent on input pin "CLR"
     Warning (15610): No output dependent on input pin "adc"
     Warning (15610): No output dependent on input pin "rtr"
-Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+    Warning (15610): No output dependent on input pin "IRin"
+Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
     Info: Peak virtual memory: 4639 megabytes
-    Info: Processing ended: Mon Oct 08 15:47:55 2018
+    Info: Processing ended: Tue Oct 09 10:47:13 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

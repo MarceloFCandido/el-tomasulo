@@ -5,6 +5,7 @@ entity tomasulim is
         CLK             : in     vl_logic;
         CLR             : in     vl_logic;
         adc             : in     vl_logic;
-        rtr             : in     vl_logic
+        rtr             : in     vl_logic;
+        IRin            : in     vl_logic
     );
 end tomasulim;

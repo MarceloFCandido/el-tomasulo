@@ -20,10 +20,31 @@ ninstr@queue
 !i10b 1
 !s100 EB[=KEKU3C`557Y39V`cV0
 !s85 0
-!s108 1539024534.199000
+!s108 1539092891.588000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v|
 !s101 -O0
+vinstrRegister
+!i10b 1
+!s100 fSY=zjboBYS^d=QIhdUjz1
+I<505dX`b4HN[ehZmheb2U1
+VYiBAbMHUiSiFP[4RVmBDz2
+R1
+w1539092828
+8C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+FC:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1539092892.392000
+!s107 C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v|
+!s101 -O0
+R3
+R4
+ninstr@register
 vprogramCounter
 Ii7e;i;EUjXYPCVYgge12z2
 V:kLFC9^ED@fdoR:8obzeJ1
@@ -41,13 +62,11 @@ R4
 !i10b 1
 !s100 1ZMIZ19^]8I^kOiJXP_Go1
 !s85 0
-!s108 1539024533.947000
+!s108 1539092891.378000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v|
 !s101 -O0
 vram1pm
-!i10b 1
-!s100 a154N?DZh_XUJUZXR4Q=I1
 IGSb]0a[3`?2Z^2BMa>8XH2
 Vf?aaQ:79lZ^I4N1fRzDhk0
 R1
@@ -57,19 +76,21 @@ FC:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
 L0 39
 R2
 r1
-!s85 0
 31
-!s108 1539024534.676000
+R3
+R4
+!i10b 1
+!s100 a154N?DZh_XUJUZXR4Q=I1
+!s85 0
+!s108 1539092892.202000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v|
 !s101 -O0
-R3
-R4
 vtomasulim
-I_iO:cbAH_@0Sz=@nn?>n91
-VYLVL4>0c>`Okhkl_Vg[7J3
+If`V8@MR4l2_MC_ek[S[4o2
+V1]N90N;RXh8QW^TfoNLJ70
 R1
-w1539022946
+w1539092624
 8C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
 FC:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
 L0 1
@@ -79,9 +100,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 7oWR>IF<[S`OSg6O:X1eU2
+!s100 ?Jm[<I9@7IUSdPWBie0`c1
 !s85 0
-!s108 1539024534.443000
+!s108 1539092891.831000
 !s107 C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v|
 !s101 -O0

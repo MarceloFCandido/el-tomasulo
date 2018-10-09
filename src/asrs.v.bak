@@ -1,0 +1,11 @@
+module ASRS(opcode, rd, rs, offset, full);
+	
+	
+	reg [3:0] busy;
+	reg [2:0] opers[3:0];
+	reg [15:0] Vjs[3:0];
+	reg [15:0] Vks[3:0];
+	reg [3:0] Vjs[3:0];
+	reg [3:0] Vks[3:0];
+	
+endmodule 

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "10/08/2018 15:48:13"
+// DATE "10/09/2018 10:47:31"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -32,17 +32,20 @@ module tomasulim (
 	CLK,
 	CLR,
 	adc,
-	rtr);
+	rtr,
+	IRin);
 input 	CLK;
 input 	CLR;
 input 	adc;
 input 	rtr;
+input 	IRin;
 
 // Design Ports Information
 // CLK	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // CLR	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // adc	=>  Location: PIN_T7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// rtr	=>  Location: PIN_AA18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// rtr	=>  Location: PIN_AC5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// IRin	=>  Location: PIN_A7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -170,7 +173,7 @@ defparam \adc~I .output_register_mode = "none";
 defparam \adc~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AA18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_AC5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \rtr~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -204,6 +207,42 @@ defparam \rtr~I .output_async_reset = "none";
 defparam \rtr~I .output_power_up = "low";
 defparam \rtr~I .output_register_mode = "none";
 defparam \rtr~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_A7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \IRin~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(IRin));
+// synopsys translate_off
+defparam \IRin~I .input_async_reset = "none";
+defparam \IRin~I .input_power_up = "low";
+defparam \IRin~I .input_register_mode = "none";
+defparam \IRin~I .input_sync_reset = "none";
+defparam \IRin~I .oe_async_reset = "none";
+defparam \IRin~I .oe_power_up = "low";
+defparam \IRin~I .oe_register_mode = "none";
+defparam \IRin~I .oe_sync_reset = "none";
+defparam \IRin~I .operation_mode = "input";
+defparam \IRin~I .output_async_reset = "none";
+defparam \IRin~I .output_power_up = "low";
+defparam \IRin~I .output_register_mode = "none";
+defparam \IRin~I .output_sync_reset = "none";
 // synopsys translate_on
 
 endmodule

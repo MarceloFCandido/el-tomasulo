@@ -34,6 +34,12 @@
 # 
 # Top level modules:
 # 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
 # 
 vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
 # vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
@@ -44,6 +50,7 @@ vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_tra
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # Loading work.programCounter
 # Loading work.instrQueue
+# Loading work.instrRegister
 # do tomasulim_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -76,14 +83,28 @@ vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_tra
 # 
 # Top level modules:
 # 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
 # 
-do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/IF.do
+# Top level modules:
+# 	instrRegister
+# 
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/IF-2.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # 1
-add wave -position 4 -format Logic -height 17 -editable 2 Edit:/tomasulim/adc
-add wave -position 5 -format Logic -height 17 -editable 2 Edit:/tomasulim/rtr
-add wave -position 3 -format Logic -height 17 -editable 2 Edit:/tomasulim/CLK
-add wave -position 4 -format Logic -height 17 -editable 2 Edit:/tomasulim/CLR
 run -all
 # ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
 #    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+wave modify -driver freeze -pattern constant -value 1 -starttime 550ps -endtime 850ps Edit:/tomasulim/IRin
+restart
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/IF-2.do
+wave editwrite -file C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/IF-2.do -append
