@@ -10,4 +10,5 @@ vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:
 vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
 vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
 vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
 
