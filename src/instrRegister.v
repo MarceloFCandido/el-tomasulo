@@ -1,4 +1,4 @@
-module instrRegister(CLK, CLR, IRin, instrIn, instrOut);
+module instrRegister(CLK, CLR, IRin, instrIn, instrOut); //Registrador de instrucoes
 	input CLK, CLR, IRin;
 	input [15:0] instrIn;
 	output reg [15:0] instrOut;
