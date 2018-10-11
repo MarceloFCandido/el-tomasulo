@@ -5,10 +5,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
-vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
-vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
-vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
-vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
-vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Ãrea\ de\ Trabalho/Engenharia\ de\ ComputaÃ§Ã£o\ Quarto\ PerÃ­odo/LaboratÃ³rio\ de\ Arquitetura\ e\ OrganizaÃ§Ã£o\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Ãrea\ de\ Trabalho/Engenharia\ de\ ComputaÃ§Ã£o\ Quarto\ PerÃ­odo/LaboratÃ³rio\ de\ Arquitetura\ e\ OrganizaÃ§Ã£o\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v}
+vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Ãrea\ de\ Trabalho/Engenharia\ de\ ComputaÃ§Ã£o\ Quarto\ PerÃ­odo/LaboratÃ³rio\ de\ Arquitetura\ e\ OrganizaÃ§Ã£o\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v}
+vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Ãrea\ de\ Trabalho/Engenharia\ de\ ComputaÃ§Ã£o\ Quarto\ PerÃ­odo/LaboratÃ³rio\ de\ Arquitetura\ e\ OrganizaÃ§Ã£o\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v}
+vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Ãrea\ de\ Trabalho/Engenharia\ de\ ComputaÃ§Ã£o\ Quarto\ PerÃ­odo/LaboratÃ³rio\ de\ Arquitetura\ e\ OrganizaÃ§Ã£o\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v}
 

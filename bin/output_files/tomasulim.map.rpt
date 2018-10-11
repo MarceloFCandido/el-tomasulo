@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tomasulim
-Tue Oct 09 15:53:54 2018
+Thu Oct 11 14:24:37 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -19,12 +19,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  11. Source assignments for ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated
  12. Parameter Settings for User Entity Instance: ram1pm:instrUnit|altsyncram:altsyncram_component
  13. altsyncram Parameter Settings by Entity Instance
- 14. Port Connectivity Checks: "registerFile:RF"
- 15. Port Connectivity Checks: "instrRegister:IR"
- 16. Port Connectivity Checks: "instrQueue:iq"
- 17. Port Connectivity Checks: "ram1pm:instrUnit"
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "instrRegister:IR"
+ 15. Port Connectivity Checks: "instrQueue:iq"
+ 16. Port Connectivity Checks: "ram1pm:instrUnit"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -50,7 +49,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 09 15:53:54 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 11 14:24:37 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; tomasulim                                       ;
 ; Top-level Entity Name              ; tomasulim                                       ;
@@ -158,33 +157,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; ../src/program-counter.v         ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v                ;         ;
-; ../src/instr-queue.v             ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v                    ;         ;
-; ../src/tomasulim.v               ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v                      ;         ;
-; ../src/ram1pm.v                  ; yes             ; User Wizard-Generated File   ; C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v                         ;         ;
-; ../src/instrRegister.v           ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v                  ;         ;
-; ../src/register-file.v           ; yes             ; User Verilog HDL File        ; C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v                  ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_jpe1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/mlfca/Desktop/el-tomasulo/bin/db/altsyncram_jpe1.tdf           ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                       ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                                                                                                               ; Library ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../src/program-counter.v         ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v      ;         ;
+; ../src/instr-queue.v             ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v          ;         ;
+; ../src/tomasulim.v               ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v            ;         ;
+; ../src/ram1pm.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v               ;         ;
+; ../src/memory.mif                ; yes             ; User Memory Initialization File  ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/memory.mif             ;         ;
+; ../src/instrRegister.v           ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v        ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                                           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                                                    ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                                              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                                           ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                                                                           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                                            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                                                                               ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                                                                               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                                             ;         ;
+; db/altsyncram_jpe1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/bin/db/altsyncram_jpe1.tdf ;         ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -222,13 +221,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                         ;
-+--------+--------------+---------+--------------+--------------+-----------------------------+-------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance             ; IP Include File                                 ;
-+--------+--------------+---------+--------------+--------------+-----------------------------+-------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |tomasulim|ram1pm:instrUnit ; C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v ;
-+--------+--------------+---------+--------------+--------------+-----------------------------+-------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                      ;
++--------+--------------+---------+--------------+--------------+-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance             ; IP Include File                                                                                                                                                                              ;
++--------+--------------+---------+--------------+--------------+-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |tomasulim|ram1pm:instrUnit ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v ;
++--------+--------------+---------+--------------+--------------+-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -349,18 +348,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+--------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "registerFile:RF"                                                                      ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; depR0  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; dataR0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; depR1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; dataR1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +--------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "instrRegister:IR"                                                                       ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -404,21 +391,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 09 15:53:50 2018
+    Info: Processing started: Thu Oct 11 14:24:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tomasulim -c tomasulim
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/program-counter.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/asrs.v
+    Info (12023): Found entity 1: ASRS
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/program-counter.v
     Info (12023): Found entity 1: programCounter
-Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/instr-queue.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/instr-queue.v
     Info (12023): Found entity 1: instrQueue
-Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/tomasulim.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/tomasulim.v
     Info (12023): Found entity 1: tomasulim
-Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/ram1pm.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/ram1pm.v
     Info (12023): Found entity 1: ram1pm
-Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/instrregister.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/instrregister.v
     Info (12023): Found entity 1: instrRegister
-Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/register-file.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/register-file.v
     Info (12023): Found entity 1: registerFile
+Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/ua.v
+    Info (12023): Found entity 1: UA
 Info (12127): Elaborating entity "tomasulim" for the top level hierarchy
 Info (12128): Elaborating entity "ram1pm" for hierarchy "ram1pm:instrUnit"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram1pm:instrUnit|altsyncram:altsyncram_component"
@@ -442,10 +433,10 @@ Info (12133): Instantiated megafunction "ram1pm:instrUnit|altsyncram:altsyncram_
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_jpe1.tdf
     Info (12023): Found entity 1: altsyncram_jpe1
 Info (12128): Elaborating entity "altsyncram_jpe1" for hierarchy "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated"
+Critical Warning (127004): Memory depth (32) in the design file differs from memory depth (48) in the Memory Initialization File "C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/memory.mif" -- truncated remaining initial content value to fit RAM
 Info (12128): Elaborating entity "programCounter" for hierarchy "programCounter:pc"
 Info (12128): Elaborating entity "instrQueue" for hierarchy "instrQueue:iq"
 Info (12128): Elaborating entity "instrRegister" for hierarchy "instrRegister:IR"
-Info (12128): Elaborating entity "registerFile" for hierarchy "registerFile:RF"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[0]"
@@ -505,10 +496,10 @@ Warning (21074): Design contains 34 input pin(s) that do not drive logic
 Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 34 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 54 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 55 warnings
     Info: Peak virtual memory: 4640 megabytes
-    Info: Processing ended: Tue Oct 09 15:53:55 2018
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Thu Oct 11 14:24:37 2018
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:02
 
 

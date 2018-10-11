@@ -2,128 +2,107 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\mlfca\Desktop\el-tomasulo\bin\simulation\modelsim
+Z0 dC:\Users\arthu\OneDrive\Documentos\Área de Trabalho\Engenharia de Computação Quarto Período\Laboratório de Arquitetura e Organização de Computadores II\TP3 LAOC II\el-tomasulo\bin\simulation\modelsim
 vinstrQueue
-I6VVNTYS:3MW1HKn_ke^CC2
+IW]GYl]abJbg:m2^2S[L^R3
 VV79^zfj_<011PYRS<Cai?1
-Z1 dC:\Users\mlfca\Desktop\el-tomasulo\bin\simulation\modelsim
-w1539019042
-8C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
-FC:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
+Z1 dC:\Users\arthu\OneDrive\Documentos\Área de Trabalho\Engenharia de Computação Quarto Período\Laboratório de Arquitetura e Organização de Computadores II\TP3 LAOC II\el-tomasulo\bin\simulation\modelsim
+Z2 w1539276009
+8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v
+FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v
 L0 1
-Z2 OV;L;10.1d;51
+Z3 OV;L;10.1d;51
 r1
 31
-Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src -O0
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src} -O0
 ninstr@queue
 !i10b 1
-!s100 EB[=KEKU3C`557Y39V`cV0
+!s100 hmM9LSC9lTTRJe2WZcS^_1
 !s85 0
-!s108 1539111355.076000
-!s107 C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v|
+!s108 1539279969.931000
+!s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v|
 !s101 -O0
 vinstrRegister
-I<505dX`b4HN[ehZmheb2U1
+!i10b 1
+!s100 0184=Be=U5fN_@HSaTThE3
+IL8:zC>z<miOIlO:P8EGjG3
 VYiBAbMHUiSiFP[4RVmBDz2
 R1
-w1539092828
-8C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
-FC:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
-L0 1
 R2
-r1
-31
+8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v
+FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v
+L0 1
 R3
-R4
-ninstr@register
-!i10b 1
-!s100 fSY=zjboBYS^d=QIhdUjz1
+r1
 !s85 0
-!s108 1539111356.052000
-!s107 C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v|
+31
+!s108 1539279970.689000
+!s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v|
 !s101 -O0
+R4
+R5
+ninstr@register
 vprogramCounter
-Ii7e;i;EUjXYPCVYgge12z2
+I7inXe9G]Id7zP0fh:KS7<2
 V:kLFC9^ED@fdoR:8obzeJ1
 R1
-w1539024458
-8C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
-FC:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
-L0 1
 R2
+8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v
+FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v
+L0 1
+R3
 r1
 31
-R3
-nprogram@counter
 R4
+nprogram@counter
+R5
 !i10b 1
-!s100 1ZMIZ19^]8I^kOiJXP_Go1
+!s100 `EZJIDR^Jok2Xl_HF758f3
 !s85 0
-!s108 1539111354.873000
-!s107 C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v|
+!s108 1539279969.568000
+!s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v|
 !s101 -O0
 vram1pm
-IGSb]0a[3`?2Z^2BMa>8XH2
+IT41dOXC`mLooa@Z^zZcHm0
 Vf?aaQ:79lZ^I4N1fRzDhk0
 R1
-w1539020009
-8C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
-FC:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
+R2
+8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v
+FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v
 L0 39
-R2
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 a154N?DZh_XUJUZXR4Q=I1
+!s100 29W><ibOdaG]0NIa7XBlj0
 !s85 0
-!s108 1539111355.805000
-!s107 C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v|
+!s108 1539279970.443000
+!s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v|
 !s101 -O0
-vregisterFile
-!i10b 1
-!s100 i=ammjmV_SRYT3<a63Z_n2
-Ieg;o0^[GGJFXI_bXf10V]0
-VfYD5b?d4[GOdQ@[dGRJX40
-R1
-w1539111216
-8C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
-FC:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
-L0 1
-R2
-r1
-!s85 0
-31
-!s108 1539111356.263000
-!s107 C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v|
-!s101 -O0
-R3
-R4
-nregister@file
 vtomasulim
-ICE;<9n6J[WMAZlXibgO_V3
+I?PFIWQ]7]VX=G0IIfQoZ70
 VQk6F85<f6lbeNNi5lzV>L0
 R1
-w1539110290
-8C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
-FC:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
+w1539278587
+8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v
+FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v
 L0 1
-R2
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 >f5`og?^SH5A?fSPQ[zki1
+!s100 LjCViFGmlMB?4ihK;zGMc3
 !s85 0
-!s108 1539111355.385000
-!s107 C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/el-tomasulo/src|C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v|
+!s108 1539279970.176000
+!s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v|
 !s101 -O0
