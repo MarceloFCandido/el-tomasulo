@@ -10,43 +10,43 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/asrs.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ASRS
 # 
 # Top level modules:
 # 	ASRS
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module instrQueue
 # 
 # Top level modules:
 # 	instrQueue
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module tomasulim
 # 
 # Top level modules:
 # 	tomasulim
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ram1pm
 # 
 # Top level modules:
 # 	ram1pm
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module instrRegister
 # 
 # Top level modules:
 # 	instrRegister
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/register-file.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module registerFile
 # 
@@ -73,52 +73,57 @@ vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_tra
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/asrs.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ASRS
 # 
 # Top level modules:
 # 	ASRS
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module instrQueue
 # 
 # Top level modules:
 # 	instrQueue
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module tomasulim
 # 
 # Top level modules:
 # 	tomasulim
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ram1pm
 # 
 # Top level modules:
 # 	ram1pm
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module instrRegister
 # 
 # Top level modules:
 # 	instrRegister
-# vlog -vlog01compat -work work +incdir+C:/Users/arthu/OneDrive/Documentos/Área\ de\ Trabalho/Engenharia\ de\ Computação\ Quarto\ Período/Laboratório\ de\ Arquitetura\ e\ Organização\ de\ Computadores\ II/TP3\ LAOC\ II/el-tomasulo/src {C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/register-file.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
 # 
-do C:/Users/arthu/OneDrive/Documentos/Tomasulim-IF01.do
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-ID01.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # 1
+add wave -position 3  sim:/tomasulim/counter
+add wave -position 2  sim:/tomasulim/step
+add wave -position 49  sim:/tomasulim/Est1/clockInstr
 run -all
 # ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
 #    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-ID01.do
+wave editwrite -file C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-ID01.do -append

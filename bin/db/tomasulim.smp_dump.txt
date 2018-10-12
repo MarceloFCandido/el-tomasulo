@@ -1,13 +1,19 @@
 
-State Machine - |tomasulim|counter
-Name counter.110 counter.101 counter.100 counter.011 counter.010 counter.001 counter.000 
-counter.000 0 0 0 0 0 0 0 
-counter.001 0 0 0 0 0 1 1 
-counter.010 0 0 0 0 1 0 1 
-counter.011 0 0 0 1 0 0 1 
-counter.100 0 0 1 0 0 0 1 
-counter.101 0 1 0 0 0 0 1 
-counter.110 1 0 0 0 0 0 1 
+State Machine - |tomasulim|step
+Name step.110 step.101 step.100 step.011 step.010 step.001 step.000 
+step.000 0 0 0 0 0 0 0 
+step.001 0 0 0 0 0 1 1 
+step.010 0 0 0 0 1 0 1 
+step.011 0 0 0 1 0 0 1 
+step.100 0 0 1 0 0 0 1 
+step.101 0 1 0 0 0 0 1 
+step.110 1 0 0 0 0 0 1 
+
+State Machine - |tomasulim|UA:addSub|cont
+Name cont.00 cont.10 cont.01 
+cont.00 0 0 0 
+cont.01 1 0 1 
+cont.10 1 1 0 
 
 State Machine - |tomasulim|ASRS:Est4|cont
 Name cont.00 cont.10 cont.01 

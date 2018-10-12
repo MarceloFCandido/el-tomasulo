@@ -10,7 +10,7 @@ module instrQueue(CLK, CLR, cheio, vazio, adc, rtr, instrIn, instrOut);	//Fila d
 	reg [15:0] instrs[7:0];	//Instrucoes armazenadas
 	
 	assign cheio = iValid[0] & iValid[1] & iValid[2] & iValid[3] & iValid[4] & iValid[5] & iValid[6] & iValid[7];
-	assign vazio = (frente == tras);
+	assign vazio = ~iValid[0] & ~iValid[1] & ~iValid[2] & ~iValid[3] & ~iValid[4] & ~iValid[5] & ~iValid[6] & ~iValid[7];
 	
 	always @(posedge CLK, posedge CLR) begin
 		if (CLR) begin	//Inicializacao

@@ -1,4 +1,4 @@
-module ASRS(ID_in, CLK, CLR, start, busy, Valor1, Valor2, OP, despacho, ID_out, confirma, CDB, IRout, depR0, dataR0, depR1, dataR1 );	//Estacao de reserva para adicao e subtracao
+module ASRS(ID_in, CLK, CLR, start, busy, clockInstr, Valor1, Valor2, OP, despacho, ID_out, confirma, CDB, CLK_instr, IRout, depR0, dataR0, depR1, dataR1 );	//Estacao de reserva para adicao e subtracao
 	//Recebe instrucao, OPcode direcionado, Rd e Rs para numR0 numR1
 	
 	//Pegar os valores lidos de numR0 e numR1 e verificar se ha dependencia ou dado e direcionar
@@ -12,25 +12,26 @@ module ASRS(ID_in, CLK, CLR, start, busy, Valor1, Valor2, OP, despacho, ID_out, 
 	input confirma;
 	input [2:0]ID_in;
 	
-	output reg [2:0]ID_out;
-	output reg busy;
-	output reg despacho;
-	output reg [2:0]OP;
-	output reg [15:0] Valor1,Valor2;
-	
 	input [18:0] CDB;
 	input [15:0]IRout;		//OPCode 3 - Rd 3 - Rs 3 - Offset 7
 
 	input	 [2:0] depR0, depR1;
 	input [15:0] dataR0, dataR1;
 	
-	reg [1:0] cont;
+	input [9:0] CLK_instr;
 	
+	output reg [2:0]ID_out;
+	output reg busy;
+	output reg despacho;
+	output reg [2:0]OP;
+	output reg [15:0] Valor1,Valor2;
+	output reg [9:0] clockInstr;
+	
+	reg [1:0] cont;
+
 	reg [15:0] Vj, Vk;
 	reg [2:0] Qj, Qk;
 	reg [2:0] OPcode;
-	
-
 	
 	always @(posedge CLK, posedge CLR)begin
 		if(CLR)begin
@@ -41,6 +42,7 @@ module ASRS(ID_in, CLK, CLR, start, busy, Valor1, Valor2, OP, despacho, ID_out, 
 				Qk = 3'b0;
 				OPcode = 3'b0;
 				cont = 2'b0;
+				clockInstr = 10'b0;
 		end else begin
 			case(cont)
 				2'b00: begin
@@ -52,6 +54,7 @@ module ASRS(ID_in, CLK, CLR, start, busy, Valor1, Valor2, OP, despacho, ID_out, 
 							Qk = depR1;
 							OPcode = IRout[2:0];
 							cont = 2'b01;
+							clockInstr = CLK_instr;
 						end
 				end
 				2'b01: begin
@@ -84,9 +87,7 @@ module ASRS(ID_in, CLK, CLR, start, busy, Valor1, Valor2, OP, despacho, ID_out, 
 								cont = 2'b0;
 								despacho = 1'b0;
 						end	
-				end
-				
-			
+				end		
 			
 			endcase
 		end

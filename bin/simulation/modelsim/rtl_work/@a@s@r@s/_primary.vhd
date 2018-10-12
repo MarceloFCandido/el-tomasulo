@@ -7,6 +7,7 @@ entity ASRS is
         CLR             : in     vl_logic;
         start           : in     vl_logic;
         busy            : out    vl_logic;
+        clockInstr      : out    vl_logic_vector(9 downto 0);
         Valor1          : out    vl_logic_vector(15 downto 0);
         Valor2          : out    vl_logic_vector(15 downto 0);
         OP              : out    vl_logic_vector(2 downto 0);
@@ -14,6 +15,7 @@ entity ASRS is
         ID_out          : out    vl_logic_vector(2 downto 0);
         confirma        : in     vl_logic;
         CDB             : in     vl_logic_vector(18 downto 0);
+        CLK_instr       : in     vl_logic_vector(9 downto 0);
         IRout           : in     vl_logic_vector(15 downto 0);
         depR0           : in     vl_logic_vector(2 downto 0);
         dataR0          : in     vl_logic_vector(15 downto 0);

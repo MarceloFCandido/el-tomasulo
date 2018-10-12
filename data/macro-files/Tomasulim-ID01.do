@@ -2,6 +2,7 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /tomasulim/CLK
 add wave -noupdate /tomasulim/CLR
+add wave -noupdate /tomasulim/step
 add wave -noupdate /tomasulim/counter
 add wave -noupdate -divider PC
 add wave -noupdate /tomasulim/addrOut
@@ -43,11 +44,17 @@ add wave -noupdate /tomasulim/Est1/Vk
 add wave -noupdate /tomasulim/Est1/Qj
 add wave -noupdate /tomasulim/Est1/Qk
 add wave -noupdate /tomasulim/Est1/OPcode
+add wave -noupdate /tomasulim/Est1/ID_out
+add wave -noupdate /tomasulim/Est1/despacho
+add wave -noupdate /tomasulim/Est1/OP
+add wave -noupdate /tomasulim/Est1/Valor1
+add wave -noupdate /tomasulim/Est1/Valor2
+add wave -noupdate /tomasulim/Est1/clockInstr
 add wave -noupdate -divider Edicoes
 add wave -noupdate /tomasulim/CLK
 add wave -noupdate /tomasulim/CLR
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {750 ps} 0}
+WaveRestoreCursors {{Cursor 1} {748 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 191
 configure wave -valuecolwidth 100

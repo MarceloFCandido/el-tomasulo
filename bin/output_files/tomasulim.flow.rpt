@@ -1,5 +1,5 @@
 Flow report for tomasulim
-Fri Oct 12 10:55:36 2018
+Fri Oct 12 15:59:55 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 12 10:55:36 2018           ;
+; Flow Status                        ; Successful - Fri Oct 12 15:59:55 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; tomasulim                                       ;
 ; Top-level Entity Name              ; tomasulim                                       ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/12/2018 10:55:24 ;
+; Start date & time ; 10/12/2018 15:59:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tomasulim           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 154946498674927.153935252403536       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 141568273752483.153937077309960       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
@@ -96,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4629 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4922 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4572 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4564 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4532 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4630 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 4895 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4572 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4556 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,11 +110,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Arthur           ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Arthur           ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Arthur           ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Arthur           ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Arthur           ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-USLAC7G  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-USLAC7G  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-USLAC7G  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-USLAC7G  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-USLAC7G  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
