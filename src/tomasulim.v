@@ -22,93 +22,99 @@ module tomasulim(CLK, CLR);
 	reg [2:0] numR0,numR1;	//Indice correspondente aos registradores
 	reg wren;					//Habilita escrita do banco de registradores
 	reg [15:0] dataW;			//Dado de escrita
+	reg [2:0]depW, numW;		//Dependencia / Registrador de escrita				
+	
+	wire [15:0] Valor1, Valor2;	
+	wire [2:0]OP;
+	wire despacho, confirma;
+	wire [2:0]ID_out;
+	wire [18:0]CDB;
 	
 	always @(posedge CLK, posedge CLR) begin
 		//Resetando as variaveis
 		if(CLR)begin
-			adc = 1'b1;
-			rtr = 1'b1;
+			adc = 1'b0;
+			rtr = 1'b0;
 			counter = 3'b0;
 			IRin = 1'b0;
 			numR0 = 3'b0;			
 			numR1 = 3'b0;
-			start = 8'b0;
+			start = 9'b0;
 			dataW = 16'b0;
 			wren = 1'b0;
 			
 		end else begin
 			case(counter)
 				//PC incrementa e manda o endereco para a memoria
-				3'b000:
+				3'b000:	begin
 					counter = 3'b001;
 					
+				end
 				//Saida da memoria vai para a fila
-				3'b001:
+				3'b001:	begin
 					counter = 3'b010;
-					
-				//Habilitando a entrada de IR
+					adc = 1'b1;
+				end
+				//Preparando para retirar da fila
 				3'b010:	begin
 					counter = 3'b011;
-					IRin = 1'b1;
+					rtr = 1'b1;
+				end
+				//Habilitando a entrada de IR e retirando da fila
+				3'b011:	begin
+					counter = 3'b100;
+					rtr = 1'b0;
+					IRin = 1'b1;			//So toma efeito no proximo ciclo
 				end
 				
 				//Preparando a requisicao de dados
-				3'b011: begin
-					rtr = 1'b0;
+				3'b100: begin
 					IRin = 1'b0;
-					numR0 = IRout[5:3];			//BUSCANDO NO BANCO DE REGISTRADORES
+					numR0 = IRout[5:3];			//BUSCANDO NO BANCO DE REGISTRADORES, so tem efeito no proximo ciclo
 					numR1 = IRout[8:6];
-					counter = 3'b100;
+					counter = 3'b101;
 				end
 				
+				
 				//Buscando Estacao
-				3'b100: begin
+				3'b101: begin
 					if(~busy[1])begin
 						start[1] = 1'b1;
 						depW = 3'b001;
 						numW = numR0;
-						wren = 1'b1;
+						counter = 3'b110;
+						
 						
 					end	else if(~busy[2]) begin
 						start[2] = 1'b1;
 						depW = 3'b010;
 						numW = numR0;
-						wren = 1'b1;
+						counter = 3'b110;
 						
 					end	else if(~busy[3]) begin
 						start[3] = 1'b1;
 						depW = 3'b011;
 						numW = numR0;
-						wren = 1'b1;
+						counter = 3'b110;
 						
 					end	else if(~busy[4]) begin
 						start[4] = 1'b1;
 						depW = 3'b100;
 						numW = numR0;
-						wren = 1'b1;
+						counter = 3'b110;
+						
+					end else begin
+							//Logica de stall, ja que nao existe nenhuma estacao disponivel
 						
 					end
+					
+				end
+				3'b110 : begin
+					wren = 1'b1; //Escrevendo dependencia
+				
 				end
 			endcase
 		end
-		
-		
-		//Estagio 1
-		//numR0 = IRout[5:3]			BUSCANDO NO BANCO DE REGISTRADORES
-		//numR1 = IRout[8:6]
-		
-		
-		//Estagio 2	
-		//Estacao x disponivel?
-			//Tornar a estacao x indisponivel
-			//Passa para a estacao o IRout e os dados de saida do banco de registradore requisitados anteriormente.
-			//Prepara para escrita no banco de registradores 
-				//depW = X
-				//numW = IRout[5:3]
-				//wren = 1'b1
-		
-		
-		
 		
 	end
 	

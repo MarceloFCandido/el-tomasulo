@@ -3,66 +3,87 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\arthu\OneDrive\Documentos\Área de Trabalho\Engenharia de Computação Quarto Período\Laboratório de Arquitetura e Organização de Computadores II\TP3 LAOC II\el-tomasulo\bin\simulation\modelsim
-vinstrQueue
-IW]GYl]abJbg:m2^2S[L^R3
-VV79^zfj_<011PYRS<Cai?1
+vASRS
+Ib1QnleP2FH87KV8DNabMN2
+V;BbHKdY<AXelCRXmPLQB:3
 Z1 dC:\Users\arthu\OneDrive\Documentos\Área de Trabalho\Engenharia de Computação Quarto Período\Laboratório de Arquitetura e Organização de Computadores II\TP3 LAOC II\el-tomasulo\bin\simulation\modelsim
-Z2 w1539276009
+w1539280517
+8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/asrs.v
+FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/asrs.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@s@r@s
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src} -O0
+!i10b 1
+!s100 F4L4l8ggHkbK4`Mf?iRaC1
+!s85 0
+!s108 1539352572.667000
+!s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/asrs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/asrs.v|
+!s101 -O0
+vinstrQueue
+I`Rb32FaUX@b]0K?CNH3`M2
+VV79^zfj_<011PYRS<Cai?1
+R1
+w1539347546
 8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v
 FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v
 L0 1
-Z3 OV;L;10.1d;51
+R2
 r1
 31
-Z4 o-vlog01compat -work work -O0
-Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src} -O0
+R3
+R4
 ninstr@queue
 !i10b 1
-!s100 hmM9LSC9lTTRJe2WZcS^_1
+!s100 Qz<74nnlB>kogY3>2V:>=0
 !s85 0
-!s108 1539279969.931000
+!s108 1539352573.156000
 !s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v|
 !s101 -O0
 vinstrRegister
-!i10b 1
-!s100 0184=Be=U5fN_@HSaTThE3
 IL8:zC>z<miOIlO:P8EGjG3
 VYiBAbMHUiSiFP[4RVmBDz2
 R1
-R2
+w1539350075
 8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v
 FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v
 L0 1
-R3
+R2
 r1
-!s85 0
 31
-!s108 1539279970.689000
+R3
+R4
+ninstr@register
+!i10b 1
+!s100 0184=Be=U5fN_@HSaTThE3
+!s85 0
+!s108 1539352573.809000
 !s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v|
 !s101 -O0
-R4
-R5
-ninstr@register
 vprogramCounter
 I7inXe9G]Id7zP0fh:KS7<2
 V:kLFC9^ED@fdoR:8obzeJ1
 R1
-R2
+Z5 w1539276009
 8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v
 FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v
 L0 1
-R3
+R2
 r1
 31
+R3
 R4
 nprogram@counter
-R5
 !i10b 1
 !s100 `EZJIDR^Jok2Xl_HF758f3
 !s85 0
-!s108 1539279969.568000
+!s108 1539352572.893000
 !s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v|
 !s101 -O0
@@ -70,39 +91,60 @@ vram1pm
 IT41dOXC`mLooa@Z^zZcHm0
 Vf?aaQ:79lZ^I4N1fRzDhk0
 R1
-R2
+R5
 8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v
 FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v
 L0 39
-R3
+R2
 r1
 31
+R3
 R4
-R5
 !i10b 1
 !s100 29W><ibOdaG]0NIa7XBlj0
 !s85 0
-!s108 1539279970.443000
+!s108 1539352573.605000
 !s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v|
 !s101 -O0
-vtomasulim
-I?PFIWQ]7]VX=G0IIfQoZ70
-VQk6F85<f6lbeNNi5lzV>L0
+vregisterFile
+!i10b 1
+!s100 eZn>F;z>OX6MjKlNAbOGF1
+IULd7DKZ7Z@Ye4<TcG<=cH1
+VfYD5b?d4[GOdQ@[dGRJX40
 R1
-w1539278587
+w1539351048
+8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/register-file.v
+FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/register-file.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1539352574.020000
+!s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/register-file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/register-file.v|
+!s101 -O0
+R3
+R4
+nregister@file
+vtomasulim
+In:>?Yz=]8nJZ_PaeG1Gjk1
+Vng1AohP3:`9hi;E_]9D:H2
+R1
+w1539352503
 8C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v
 FC:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v
 L0 1
-R3
+R2
 r1
 31
+R3
 R4
-R5
 !i10b 1
-!s100 LjCViFGmlMB?4ihK;zGMc3
+!s100 mTAodZ`ai;6^;f=3Wn3=83
 !s85 0
-!s108 1539279970.176000
+!s108 1539352573.363000
 !s107 C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src|C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v|
 !s101 -O0

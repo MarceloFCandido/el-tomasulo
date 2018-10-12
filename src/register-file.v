@@ -14,9 +14,9 @@ module registerFile(CLK, CLR, wren, numW, depW, dataW, numR0, depR0, dataR0, num
 	always @(posedge CLK, posedge CLR) begin 
 		if (CLR) begin	//Inicializacao
 			regs[0] = 16'b0;
-			regs[1] = 16'b0;
+			regs[1] = 16'b01;
 			regs[2] = 16'b0;
-			regs[3] = 16'b0;
+			regs[3] = 16'b011;
 			regs[4] = 16'b0;
 			regs[5] = 16'b0;
 			regs[6] = 16'b0;
@@ -30,36 +30,39 @@ module registerFile(CLK, CLR, wren, numW, depW, dataW, numR0, depR0, dataR0, num
 			depRegs[5] = 3'b0;
 			depRegs[6] = 3'b0;
 			depRegs[7] = 3'b0;
-		end else if (wren) begin
-			// Nao quer escrever dependencia
-			if (depW == 3'b000) begin
-				depRegs[numW] = 3'b000;		//Nao há dependencia nesse registrador
-				regs[numW] = dataW;			//Dado escrito 
-			// Quer escrever dependencia
-			end else begin
-				depRegs[numW] = depW; //Ha dependencia nesse registrador 
-			end
+		end else begin 
+				if (wren) begin
+					// Nao quer escrever dependencia
+					if (depW == 3'b000) begin
+						depRegs[numW] = 3'b000;		//Nao há dependencia nesse registrador
+						regs[numW] = dataW;			//Dado escrito 
+					// Quer escrever dependencia
+					end else begin
+						depRegs[numW] = depW; //Ha dependencia nesse registrador 
+					end
+				end
 
-			R0 = numR0;	
-			// Confere se ha dependencia no registrador de leitura R0
-			if (depRegs[R0] != 3'b000) begin
-				depR0 = depRegs[R0];	//Indica a dependencia 
-			// Nao ha depedencia
-			end else begin
-				depR0 = 3'b000;
-				dataR0 = regs[R0]; //Dado lido
+					R0 = numR0;	
+					// Confere se ha dependencia no registrador de leitura R0
+					if (depRegs[R0] != 3'b000) begin
+						depR0 = depRegs[R0];	//Indica a dependencia 
+					// Nao ha depedencia
+					end else begin
+						depR0 = 3'b000;
+						dataR0 = regs[R0]; //Dado lido
+					end
+					
+					R1 = numR1;
+					// Confere se ha dependencia no registrador de leitura R1
+					if (depRegs[R1] != 3'b000) begin
+						depR1 = depRegs[R1]; //Indica a dependencia
+					// Nao ha depedencia
+					end else begin
+						depR1 = 3'b000;
+						dataR1 = regs[R1];	//Dado lido
+					end
 			end
-			
-			R1 = numR1;
-			// Confere se ha dependencia no registrador de leitura R1
-			if (depRegs[R1] != 3'b000) begin
-				depR1 = depRegs[R1]; //Indica a dependencia
-			// Nao ha depedencia
-			end else begin
-				depR1 = 3'b000;
-				dataR1 = regs[R1];	//Dado lido
-			end
-		end
+		
 		
 	end
 	

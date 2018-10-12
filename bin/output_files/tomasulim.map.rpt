@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tomasulim
-Thu Oct 11 14:24:37 2018
+Fri Oct 12 10:55:25 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,16 +14,27 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Source assignments for ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated
- 12. Parameter Settings for User Entity Instance: ram1pm:instrUnit|altsyncram:altsyncram_component
- 13. altsyncram Parameter Settings by Entity Instance
- 14. Port Connectivity Checks: "instrRegister:IR"
- 15. Port Connectivity Checks: "instrQueue:iq"
- 16. Port Connectivity Checks: "ram1pm:instrUnit"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  9. State Machine - |tomasulim|counter
+ 10. State Machine - |tomasulim|ASRS:Est4|cont
+ 11. State Machine - |tomasulim|ASRS:Est3|cont
+ 12. State Machine - |tomasulim|ASRS:Est2|cont
+ 13. State Machine - |tomasulim|ASRS:Est1|cont
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated
+ 19. Parameter Settings for User Entity Instance: ram1pm:instrUnit|altsyncram:altsyncram_component
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. Port Connectivity Checks: "ASRS:Est4"
+ 22. Port Connectivity Checks: "ASRS:Est3"
+ 23. Port Connectivity Checks: "ASRS:Est2"
+ 24. Port Connectivity Checks: "ASRS:Est1"
+ 25. Port Connectivity Checks: "registerFile:RF"
+ 26. Port Connectivity Checks: "instrQueue:iq"
+ 27. Port Connectivity Checks: "ram1pm:instrUnit"
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
 
 
 
@@ -49,7 +60,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 11 14:24:37 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 12 10:55:25 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; tomasulim                                       ;
 ; Top-level Entity Name              ; tomasulim                                       ;
@@ -58,7 +69,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 34                                              ;
+; Total pins                         ; 2                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -162,28 +173,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                       ;
-+----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                                                                                                               ; Library ;
-+----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../src/program-counter.v         ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v      ;         ;
-; ../src/instr-queue.v             ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v          ;         ;
-; ../src/tomasulim.v               ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v            ;         ;
-; ../src/ram1pm.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v               ;         ;
-; ../src/memory.mif                ; yes             ; User Memory Initialization File  ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/memory.mif             ;         ;
-; ../src/instrRegister.v           ; yes             ; User Verilog HDL File            ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v        ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                                           ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                                                    ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                                              ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                                           ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                                                                           ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                                            ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                                                                               ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                                                                               ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                                             ;         ;
-; db/altsyncram_jpe1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/bin/db/altsyncram_jpe1.tdf ;         ;
-+----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                                                               ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../src/asrs.v                    ; yes             ; User Verilog HDL File        ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/asrs.v                 ;         ;
+; ../src/program-counter.v         ; yes             ; User Verilog HDL File        ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/program-counter.v      ;         ;
+; ../src/instr-queue.v             ; yes             ; User Verilog HDL File        ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instr-queue.v          ;         ;
+; ../src/tomasulim.v               ; yes             ; User Verilog HDL File        ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/tomasulim.v            ;         ;
+; ../src/ram1pm.v                  ; yes             ; User Wizard-Generated File   ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/ram1pm.v               ;         ;
+; ../src/instrRegister.v           ; yes             ; User Verilog HDL File        ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/instrRegister.v        ;         ;
+; ../src/register-file.v           ; yes             ; User Verilog HDL File        ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/register-file.v        ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                                           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                                                    ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                                              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                                           ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                                                                           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                                            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                                                                               ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                                                                               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                                             ;         ;
+; db/altsyncram_jpe1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/bin/db/altsyncram_jpe1.tdf ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -206,7 +218,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 34    ;
+; I/O pins                                    ; 2     ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 +---------------------------------------------+-------+
 
@@ -216,7 +228,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |tomasulim                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |tomasulim          ; work         ;
+; |tomasulim                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |tomasulim          ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -230,17 +242,206 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; instrQueue:iq|iValid[0..7]             ; Lost fanout        ;
-; instrQueue:iq|frente[0..2]             ; Lost fanout        ;
-; instrQueue:iq|tras[0..2]               ; Lost fanout        ;
-; programCounter:pc|addrOut[0..4]        ; Lost fanout        ;
-; Total Number of Removed Registers = 19 ;                    ;
-+----------------------------------------+--------------------+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------+
+; State Machine - |tomasulim|counter                                                                            ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; Name        ; counter.110 ; counter.101 ; counter.100 ; counter.011 ; counter.010 ; counter.001 ; counter.000 ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; counter.000 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ;
+; counter.001 ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 1           ;
+; counter.010 ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 1           ;
+; counter.011 ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 1           ;
+; counter.100 ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 1           ;
+; counter.101 ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; counter.110 ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------+
+; State Machine - |tomasulim|ASRS:Est4|cont ;
++---------+---------+---------+-------------+
+; Name    ; cont.00 ; cont.10 ; cont.01     ;
++---------+---------+---------+-------------+
+; cont.00 ; 0       ; 0       ; 0           ;
+; cont.01 ; 1       ; 0       ; 1           ;
+; cont.10 ; 1       ; 1       ; 0           ;
++---------+---------+---------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------+
+; State Machine - |tomasulim|ASRS:Est3|cont ;
++---------+---------+---------+-------------+
+; Name    ; cont.00 ; cont.10 ; cont.01     ;
++---------+---------+---------+-------------+
+; cont.00 ; 0       ; 0       ; 0           ;
+; cont.01 ; 1       ; 0       ; 1           ;
+; cont.10 ; 1       ; 1       ; 0           ;
++---------+---------+---------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------+
+; State Machine - |tomasulim|ASRS:Est2|cont ;
++---------+---------+---------+-------------+
+; Name    ; cont.00 ; cont.10 ; cont.01     ;
++---------+---------+---------+-------------+
+; cont.00 ; 0       ; 0       ; 0           ;
+; cont.01 ; 1       ; 0       ; 1           ;
+; cont.10 ; 1       ; 1       ; 0           ;
++---------+---------+---------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------+
+; State Machine - |tomasulim|ASRS:Est1|cont ;
++---------+---------+---------+-------------+
+; Name    ; cont.00 ; cont.10 ; cont.01     ;
++---------+---------+---------+-------------+
+; cont.00 ; 0       ; 0       ; 0           ;
+; cont.01 ; 1       ; 0       ; 1           ;
+; cont.10 ; 1       ; 1       ; 0           ;
++---------+---------+---------+-------------+
+
+
++--------------------------------------------------------------+
+; Registers Removed During Synthesis                           ;
++-----------------------------------------+--------------------+
+; Register name                           ; Reason for Removal ;
++-----------------------------------------+--------------------+
+; counter~11                              ; Lost fanout        ;
+; counter~12                              ; Lost fanout        ;
+; counter~13                              ; Lost fanout        ;
+; ASRS:Est4|busy                          ; Lost fanout        ;
+; ASRS:Est1|busy                          ; Lost fanout        ;
+; ASRS:Est2|busy                          ; Lost fanout        ;
+; ASRS:Est3|busy                          ; Lost fanout        ;
+; ASRS:Est4|Qj[0..2]                      ; Lost fanout        ;
+; ASRS:Est4|Qk[0..2]                      ; Lost fanout        ;
+; start[4]                                ; Lost fanout        ;
+; ASRS:Est3|Qj[0..2]                      ; Lost fanout        ;
+; ASRS:Est3|Qk[0..2]                      ; Lost fanout        ;
+; start[3]                                ; Lost fanout        ;
+; ASRS:Est2|Qj[0..2]                      ; Lost fanout        ;
+; ASRS:Est2|Qk[0..2]                      ; Lost fanout        ;
+; start[2]                                ; Lost fanout        ;
+; ASRS:Est1|Qj[0..2]                      ; Lost fanout        ;
+; ASRS:Est1|Qk[0..2]                      ; Lost fanout        ;
+; start[1]                                ; Lost fanout        ;
+; registerFile:RF|depR0[0..2]             ; Lost fanout        ;
+; registerFile:RF|depR1[0..2]             ; Lost fanout        ;
+; numR0[0,1]                              ; Lost fanout        ;
+; depW[2]                                 ; Lost fanout        ;
+; registerFile:RF|depRegs[0][2]           ; Lost fanout        ;
+; numW[0..2]                              ; Lost fanout        ;
+; wren                                    ; Lost fanout        ;
+; registerFile:RF|depRegs[1][2]           ; Lost fanout        ;
+; registerFile:RF|depRegs[2][2]           ; Lost fanout        ;
+; registerFile:RF|depRegs[3][2]           ; Lost fanout        ;
+; numR0[2]                                ; Lost fanout        ;
+; registerFile:RF|depRegs[4][2]           ; Lost fanout        ;
+; registerFile:RF|depRegs[5][2]           ; Lost fanout        ;
+; registerFile:RF|depRegs[6][2]           ; Lost fanout        ;
+; registerFile:RF|depRegs[7][2]           ; Lost fanout        ;
+; depW[1]                                 ; Lost fanout        ;
+; registerFile:RF|depRegs[0][1]           ; Lost fanout        ;
+; registerFile:RF|depRegs[1][1]           ; Lost fanout        ;
+; registerFile:RF|depRegs[2][1]           ; Lost fanout        ;
+; registerFile:RF|depRegs[3][1]           ; Lost fanout        ;
+; registerFile:RF|depRegs[4][1]           ; Lost fanout        ;
+; registerFile:RF|depRegs[5][1]           ; Lost fanout        ;
+; registerFile:RF|depRegs[6][1]           ; Lost fanout        ;
+; registerFile:RF|depRegs[7][1]           ; Lost fanout        ;
+; depW[0]                                 ; Lost fanout        ;
+; registerFile:RF|depRegs[0][0]           ; Lost fanout        ;
+; registerFile:RF|depRegs[1][0]           ; Lost fanout        ;
+; registerFile:RF|depRegs[2][0]           ; Lost fanout        ;
+; registerFile:RF|depRegs[3][0]           ; Lost fanout        ;
+; registerFile:RF|depRegs[4][0]           ; Lost fanout        ;
+; registerFile:RF|depRegs[5][0]           ; Lost fanout        ;
+; registerFile:RF|depRegs[6][0]           ; Lost fanout        ;
+; registerFile:RF|depRegs[7][0]           ; Lost fanout        ;
+; numR1[0..2]                             ; Lost fanout        ;
+; instrRegister:IR|instrOut[3..8]         ; Lost fanout        ;
+; instrQueue:iq|instrOut[3]               ; Lost fanout        ;
+; IRin                                    ; Lost fanout        ;
+; instrQueue:iq|instrOut[4..8]            ; Lost fanout        ;
+; rtr                                     ; Lost fanout        ;
+; instrQueue:iq|frente[0]                 ; Lost fanout        ;
+; instrQueue:iq|tras[0]                   ; Lost fanout        ;
+; instrQueue:iq|frente[1]                 ; Lost fanout        ;
+; instrQueue:iq|tras[1]                   ; Lost fanout        ;
+; instrQueue:iq|frente[2]                 ; Lost fanout        ;
+; instrQueue:iq|tras[2]                   ; Lost fanout        ;
+; adc                                     ; Lost fanout        ;
+; instrQueue:iq|iValid[0..7]              ; Lost fanout        ;
+; programCounter:pc|addrOut[0..4]         ; Lost fanout        ;
+; counter.000                             ; Lost fanout        ;
+; counter.001                             ; Lost fanout        ;
+; counter.010                             ; Lost fanout        ;
+; counter.011                             ; Lost fanout        ;
+; counter.100                             ; Lost fanout        ;
+; counter.101                             ; Lost fanout        ;
+; counter.110                             ; Lost fanout        ;
+; ASRS:Est4|cont.01                       ; Lost fanout        ;
+; ASRS:Est4|cont.10                       ; Lost fanout        ;
+; ASRS:Est4|cont.00                       ; Lost fanout        ;
+; ASRS:Est3|cont.01                       ; Lost fanout        ;
+; ASRS:Est3|cont.10                       ; Lost fanout        ;
+; ASRS:Est3|cont.00                       ; Lost fanout        ;
+; ASRS:Est2|cont.01                       ; Lost fanout        ;
+; ASRS:Est2|cont.10                       ; Lost fanout        ;
+; ASRS:Est2|cont.00                       ; Lost fanout        ;
+; ASRS:Est1|cont.01                       ; Lost fanout        ;
+; ASRS:Est1|cont.10                       ; Lost fanout        ;
+; ASRS:Est1|cont.00                       ; Lost fanout        ;
+; Total Number of Removed Registers = 131 ;                    ;
++-----------------------------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                    ;
++-----------------+--------------------+-----------------------------------------------------------------------------------------+
+; Register name   ; Reason for Removal ; Registers Removed due to This Register                                                  ;
++-----------------+--------------------+-----------------------------------------------------------------------------------------+
+; ASRS:Est4|Qj[2] ; Lost Fanouts       ; ASRS:Est4|Qj[1], ASRS:Est4|Qj[0], ASRS:Est4|Qk[2], ASRS:Est4|Qk[1], ASRS:Est4|Qk[0],    ;
+;                 ;                    ; registerFile:RF|depR0[2], registerFile:RF|depR0[1], registerFile:RF|depR0[0],           ;
+;                 ;                    ; registerFile:RF|depR1[2], registerFile:RF|depR1[1], registerFile:RF|depR1[0], numR0[0], ;
+;                 ;                    ; numR0[1], depW[2], registerFile:RF|depRegs[0][2], numW[2], numW[1], numW[0], wren,      ;
+;                 ;                    ; registerFile:RF|depRegs[1][2], registerFile:RF|depRegs[2][2],                           ;
+;                 ;                    ; registerFile:RF|depRegs[3][2], numR0[2], depW[1], registerFile:RF|depRegs[0][1],        ;
+;                 ;                    ; registerFile:RF|depRegs[1][1], registerFile:RF|depRegs[2][1],                           ;
+;                 ;                    ; registerFile:RF|depRegs[3][1], depW[0], registerFile:RF|depRegs[0][0],                  ;
+;                 ;                    ; registerFile:RF|depRegs[1][0], registerFile:RF|depRegs[2][0],                           ;
+;                 ;                    ; registerFile:RF|depRegs[3][0], numR1[0], numR1[1], numR1[2],                            ;
+;                 ;                    ; instrRegister:IR|instrOut[3], instrRegister:IR|instrOut[4],                             ;
+;                 ;                    ; instrRegister:IR|instrOut[5], instrRegister:IR|instrOut[6],                             ;
+;                 ;                    ; instrRegister:IR|instrOut[7], instrRegister:IR|instrOut[8],                             ;
+;                 ;                    ; instrQueue:iq|instrOut[3], IRin, instrQueue:iq|instrOut[4], instrQueue:iq|instrOut[5],  ;
+;                 ;                    ; instrQueue:iq|instrOut[6], instrQueue:iq|instrOut[7], instrQueue:iq|instrOut[8], rtr,   ;
+;                 ;                    ; instrQueue:iq|frente[0], instrQueue:iq|tras[0], instrQueue:iq|frente[1],                ;
+;                 ;                    ; instrQueue:iq|tras[1], instrQueue:iq|frente[2], instrQueue:iq|tras[2], adc,             ;
+;                 ;                    ; instrQueue:iq|iValid[7], instrQueue:iq|iValid[6], instrQueue:iq|iValid[5],              ;
+;                 ;                    ; instrQueue:iq|iValid[4], instrQueue:iq|iValid[3], instrQueue:iq|iValid[2],              ;
+;                 ;                    ; instrQueue:iq|iValid[1], programCounter:pc|addrOut[0], programCounter:pc|addrOut[1],    ;
+;                 ;                    ; programCounter:pc|addrOut[2], programCounter:pc|addrOut[3],                             ;
+;                 ;                    ; programCounter:pc|addrOut[4], ASRS:Est4|cont.01, ASRS:Est4|cont.10                      ;
+; counter~11      ; Lost Fanouts       ; ASRS:Est4|busy, start[4], counter.000, counter.010, counter.100, counter.101,           ;
+;                 ;                    ; ASRS:Est4|cont.00                                                                       ;
+; ASRS:Est3|Qj[2] ; Lost Fanouts       ; ASRS:Est3|Qj[1], ASRS:Est3|Qj[0], ASRS:Est3|Qk[2], ASRS:Est3|Qk[1], ASRS:Est3|Qk[0],    ;
+;                 ;                    ; ASRS:Est3|cont.01, ASRS:Est3|cont.10                                                    ;
+; ASRS:Est2|Qj[2] ; Lost Fanouts       ; ASRS:Est2|Qj[1], ASRS:Est2|Qj[0], ASRS:Est2|Qk[2], ASRS:Est2|Qk[1], ASRS:Est2|Qk[0],    ;
+;                 ;                    ; ASRS:Est2|cont.01, ASRS:Est2|cont.10                                                    ;
+; ASRS:Est1|Qj[2] ; Lost Fanouts       ; ASRS:Est1|Qj[1], ASRS:Est1|Qj[0], ASRS:Est1|Qk[2], ASRS:Est1|Qk[1], ASRS:Est1|Qk[0],    ;
+;                 ;                    ; ASRS:Est1|cont.01, ASRS:Est1|cont.10                                                    ;
+; counter~12      ; Lost Fanouts       ; counter.001, counter.110                                                                ;
+; ASRS:Est1|busy  ; Lost Fanouts       ; start[1], ASRS:Est1|cont.00                                                             ;
+; ASRS:Est2|busy  ; Lost Fanouts       ; start[2], ASRS:Est2|cont.00                                                             ;
+; ASRS:Est3|busy  ; Lost Fanouts       ; start[3], ASRS:Est3|cont.00                                                             ;
+; counter~13      ; Lost Fanouts       ; counter.011                                                                             ;
++-----------------+--------------------+-----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -256,6 +457,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |tomasulim|depW[1]                 ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|numW[1]                 ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est4|Qj[1]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est4|Qk[2]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est3|Qj[1]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est3|Qk[2]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est2|Qj[1]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est2|Qk[2]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est1|Qj[2]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est1|Qk[2]         ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |tomasulim|registerFile:RF|depRegs ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |tomasulim|registerFile:RF|Mux2    ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |tomasulim|registerFile:RF|Mux20   ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; No         ; |tomasulim|counter                 ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est4|Selector44    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est3|Selector44    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est2|Selector43    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est1|Selector43    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -348,13 +582,59 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+--------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "instrRegister:IR"                                                                       ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; instrOut ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------+
+; Port Connectivity Checks: "ASRS:Est4"         ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; ID_in[1..0] ; Input ; Info     ; Stuck at GND ;
+; ID_in[2]    ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "ASRS:Est3"         ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; ID_in[1..0] ; Input ; Info     ; Stuck at VCC ;
+; ID_in[2]    ; Input ; Info     ; Stuck at GND ;
++-------------+-------+----------+--------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "ASRS:Est2"      ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; ID_in[2] ; Input ; Info     ; Stuck at GND ;
+; ID_in[1] ; Input ; Info     ; Stuck at VCC ;
+; ID_in[0] ; Input ; Info     ; Stuck at GND ;
++----------+-------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ASRS:Est1"                                                                                 ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; ID_in[2..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; ID_in[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Valor1      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Valor2      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; OP          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; despacho    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ID_out      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "registerFile:RF" ;
++-------+-------+----------+------------------+
+; Port  ; Type  ; Severity ; Details          ;
++-------+-------+----------+------------------+
+; dataW ; Input ; Info     ; Stuck at GND     ;
++-------+-------+----------+------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
@@ -391,7 +671,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 11 14:24:22 2018
+    Info: Processing started: Fri Oct 12 10:55:24 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tomasulim -c tomasulim
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/asrs.v
@@ -411,6 +691,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/arthu/onedrive/documentos/Área de trabalho/engenharia de computação quarto período/laboratório de arquitetura e organização de computadores ii/tp3 laoc ii/el-tomasulo/src/ua.v
     Info (12023): Found entity 1: UA
 Info (12127): Elaborating entity "tomasulim" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at tomasulim.v(33): inferring latch(es) for variable "start", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at tomasulim.v(33): inferring latch(es) for variable "dataW", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "dataW[0]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[1]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[2]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[3]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[4]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[5]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[6]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[7]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[8]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[9]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[10]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[11]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[12]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[13]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[14]" at tomasulim.v(47)
+Info (10041): Inferred latch for "dataW[15]" at tomasulim.v(47)
 Info (12128): Elaborating entity "ram1pm" for hierarchy "ram1pm:instrUnit"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram1pm:instrUnit|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "ram1pm:instrUnit|altsyncram:altsyncram_component"
@@ -433,21 +731,142 @@ Info (12133): Instantiated megafunction "ram1pm:instrUnit|altsyncram:altsyncram_
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_jpe1.tdf
     Info (12023): Found entity 1: altsyncram_jpe1
 Info (12128): Elaborating entity "altsyncram_jpe1" for hierarchy "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated"
-Critical Warning (127004): Memory depth (32) in the design file differs from memory depth (48) in the Memory Initialization File "C:/Users/arthu/OneDrive/Documentos/Área de Trabalho/Engenharia de Computação Quarto Período/Laboratório de Arquitetura e Organização de Computadores II/TP3 LAOC II/el-tomasulo/src/memory.mif" -- truncated remaining initial content value to fit RAM
 Info (12128): Elaborating entity "programCounter" for hierarchy "programCounter:pc"
 Info (12128): Elaborating entity "instrQueue" for hierarchy "instrQueue:iq"
 Info (12128): Elaborating entity "instrRegister" for hierarchy "instrRegister:IR"
+Info (12128): Elaborating entity "registerFile" for hierarchy "registerFile:RF"
+Info (12128): Elaborating entity "ASRS" for hierarchy "ASRS:Est1"
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "confirma" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[18]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[17]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[16]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[15]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[14]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[13]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[12]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[11]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[10]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[9]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[8]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[7]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[6]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[5]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[4]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[3]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[2]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[1]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[0]" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "confirma" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[18]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[17]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[16]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[15]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[14]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[13]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[12]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[11]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[10]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[9]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[8]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[7]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[6]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[5]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[4]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[3]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[2]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[1]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[0]" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "confirma" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[18]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[17]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[16]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[15]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[14]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[13]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[12]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[11]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[10]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[9]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[8]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[7]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[6]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[5]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[4]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[3]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[2]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[1]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[0]" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "confirma" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[18]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[17]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[16]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[15]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[14]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[13]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[12]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[11]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[10]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[9]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[8]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[7]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[6]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[5]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[4]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[3]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[2]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[1]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[0]" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "confirma" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[18]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[17]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[16]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[15]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[14]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[13]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[12]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[11]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[10]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[9]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[8]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[7]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[6]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[5]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[4]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[3]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[2]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[1]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[0]" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "confirma" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[18]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[17]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[16]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[15]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[14]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[13]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[12]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[11]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[10]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[9]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[8]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[7]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[6]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[5]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[4]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[3]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[2]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[1]" is missing source, defaulting to GND
+    Warning (12110): Net "CDB[0]" is missing source, defaulting to GND
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[0]"
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[1]"
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[2]"
-        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[3]"
-        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[4]"
-        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[5]"
-        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[6]"
-        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[7]"
-        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[8]"
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[9]"
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[10]"
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[11]"
@@ -455,51 +874,29 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[13]"
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[14]"
         Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[15]"
-Info (17049): 19 registers lost all their fanouts during netlist optimizations.
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "instrQueue:iq|instrs" is uninferred due to inappropriate RAM size
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "ram1pm:instrUnit|altsyncram:altsyncram_component|altsyncram_jpe1:auto_generated|q_a[8]"
+Info (17049): 131 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 34 input pin(s) that do not drive logic
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLK"
     Warning (15610): No output dependent on input pin "CLR"
-    Warning (15610): No output dependent on input pin "adc"
-    Warning (15610): No output dependent on input pin "rtr"
-    Warning (15610): No output dependent on input pin "IRin"
-    Warning (15610): No output dependent on input pin "wren"
-    Warning (15610): No output dependent on input pin "numW[0]"
-    Warning (15610): No output dependent on input pin "numW[1]"
-    Warning (15610): No output dependent on input pin "numW[2]"
-    Warning (15610): No output dependent on input pin "depW[0]"
-    Warning (15610): No output dependent on input pin "depW[1]"
-    Warning (15610): No output dependent on input pin "depW[2]"
-    Warning (15610): No output dependent on input pin "dataW[0]"
-    Warning (15610): No output dependent on input pin "dataW[1]"
-    Warning (15610): No output dependent on input pin "dataW[2]"
-    Warning (15610): No output dependent on input pin "dataW[3]"
-    Warning (15610): No output dependent on input pin "dataW[4]"
-    Warning (15610): No output dependent on input pin "dataW[5]"
-    Warning (15610): No output dependent on input pin "dataW[6]"
-    Warning (15610): No output dependent on input pin "dataW[7]"
-    Warning (15610): No output dependent on input pin "dataW[8]"
-    Warning (15610): No output dependent on input pin "dataW[9]"
-    Warning (15610): No output dependent on input pin "dataW[10]"
-    Warning (15610): No output dependent on input pin "dataW[11]"
-    Warning (15610): No output dependent on input pin "dataW[12]"
-    Warning (15610): No output dependent on input pin "dataW[13]"
-    Warning (15610): No output dependent on input pin "dataW[14]"
-    Warning (15610): No output dependent on input pin "dataW[15]"
-    Warning (15610): No output dependent on input pin "numR0[0]"
-    Warning (15610): No output dependent on input pin "numR0[1]"
-    Warning (15610): No output dependent on input pin "numR0[2]"
-    Warning (15610): No output dependent on input pin "numR1[0]"
-    Warning (15610): No output dependent on input pin "numR1[1]"
-    Warning (15610): No output dependent on input pin "numR1[2]"
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 34 input pins
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 55 warnings
-    Info: Peak virtual memory: 4640 megabytes
-    Info: Processing ended: Thu Oct 11 14:24:37 2018
-    Info: Elapsed time: 00:00:15
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 152 warnings
+    Info: Peak virtual memory: 4639 megabytes
+    Info: Processing ended: Fri Oct 12 10:55:25 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 

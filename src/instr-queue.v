@@ -22,7 +22,8 @@ module instrQueue(CLK, CLR, cheio, vazio, adc, rtr, instrIn, instrOut);	//Fila d
 				instrs[tras] = instrIn;
 				iValid[tras] = 1'b1;
 				tras = tras + 1'b1;
-			end else if (rtr) begin		
+			end	 
+			if (rtr) begin		
 				if (~vazio) begin		//So e possivel retirar se nao estiver vazia
 					instrOut = instrs[frente];
 					iValid[frente] = 1'b0;
