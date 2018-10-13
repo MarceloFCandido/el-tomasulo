@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tomasulim
-Fri Oct 12 15:59:36 2018
+Sat Oct 13 10:48:08 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 12 15:59:36 2018           ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 13 10:48:08 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; tomasulim                                       ;
 ; Top-level Entity Name              ; tomasulim                                       ;
@@ -486,11 +486,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |tomasulim|depW[1]                 ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |tomasulim|depW[2]                 ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|numW[0]                 ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est4|Qj[1]         ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est4|Qk[1]         ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est3|Qj[2]         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est3|Qj[1]         ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est3|Qk[2]         ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est2|Qj[2]         ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |tomasulim|ASRS:Est2|Qk[2]         ;
@@ -507,10 +507,10 @@ Encoding Type:  One-Hot
 ; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |tomasulim|registerFile:RF|Mux2    ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |tomasulim|registerFile:RF|Mux20   ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; No         ; |tomasulim|step                    ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est4|Selector44    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est4|Selector43    ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est3|Selector44    ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est2|Selector43    ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est1|Selector43    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est2|Selector44    ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |tomasulim|ASRS:Est1|Selector42    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
@@ -704,7 +704,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 12 15:59:32 2018
+    Info: Processing started: Sat Oct 13 10:48:04 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tomasulim -c tomasulim
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/asrs.v
@@ -724,25 +724,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/el-tomasulo/src/ua.v
     Info (12023): Found entity 1: UA
 Info (12127): Elaborating entity "tomasulim" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at tomasulim.v(146): truncated value with size 3 to match size of target (2)
-Warning (10240): Verilog HDL Always Construct warning at tomasulim.v(44): inferring latch(es) for variable "start", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at tomasulim.v(44): inferring latch(es) for variable "dataW", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "dataW[0]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[1]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[2]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[3]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[4]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[5]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[6]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[7]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[8]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[9]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[10]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[11]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[12]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[13]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[14]" at tomasulim.v(58)
-Info (10041): Inferred latch for "dataW[15]" at tomasulim.v(58)
+Warning (10036): Verilog HDL or VHDL warning at tomasulim.v(8): object "teste" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at tomasulim.v(150): truncated value with size 3 to match size of target (2)
+Warning (10240): Verilog HDL Always Construct warning at tomasulim.v(45): inferring latch(es) for variable "start", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at tomasulim.v(45): inferring latch(es) for variable "dataW", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "dataW[0]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[1]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[2]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[3]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[4]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[5]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[6]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[7]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[8]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[9]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[10]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[11]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[12]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[13]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[14]" at tomasulim.v(62)
+Info (10041): Inferred latch for "dataW[15]" at tomasulim.v(62)
 Info (12128): Elaborating entity "ram1pm" for hierarchy "ram1pm:instrUnit"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram1pm:instrUnit|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "ram1pm:instrUnit|altsyncram:altsyncram_component"
@@ -771,6 +772,10 @@ Info (12128): Elaborating entity "instrRegister" for hierarchy "instrRegister:IR
 Info (12128): Elaborating entity "registerFile" for hierarchy "registerFile:RF"
 Info (12128): Elaborating entity "ASRS" for hierarchy "ASRS:Est1"
 Info (12128): Elaborating entity "UA" for hierarchy "UA:addSub"
+Warning (10240): Verilog HDL Always Construct warning at UA.v(14): inferring latch(es) for variable "Resultado", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "Resultado[16]" at UA.v(21)
+Info (10041): Inferred latch for "Resultado[17]" at UA.v(21)
+Info (10041): Inferred latch for "Resultado[18]" at UA.v(21)
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "CDB[18]" is missing source, defaulting to GND
     Warning (12110): Net "CDB[17]" is missing source, defaulting to GND
@@ -924,9 +929,9 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 148 warnings
-    Info: Peak virtual memory: 4640 megabytes
-    Info: Processing ended: Fri Oct 12 15:59:36 2018
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 150 warnings
+    Info: Peak virtual memory: 4639 megabytes
+    Info: Processing ended: Sat Oct 13 10:48:08 2018
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 

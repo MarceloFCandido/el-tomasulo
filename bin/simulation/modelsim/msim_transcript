@@ -52,6 +52,12 @@
 # 
 # Top level modules:
 # 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
 # 
 vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
 # vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
@@ -65,6 +71,13 @@ vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_tra
 # Loading work.instrRegister
 # Loading work.registerFile
 # Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
 # do tomasulim_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -115,15 +128,1087 @@ vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_tra
 # 
 # Top level modules:
 # 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
 # 
-do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-ID01.do
+# Top level modules:
+# 	UA
+# 
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # 1
-add wave -position 3  sim:/tomasulim/counter
-add wave -position 2  sim:/tomasulim/step
-add wave -position 49  sim:/tomasulim/Est1/clockInstr
 run -all
 # ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
 #    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-ID01.do
-wave editwrite -file C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-ID01.do -append
+quit -sim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+quit -sim
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+quit -sim
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+quit -sim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+restart
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+add wave -position 6  sim:/tomasulim/OP
+add wave -position 7  sim:/tomasulim/ID_out
+restart
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+wave editwrite -file C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do -append
+quit -sim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(169): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+wave editwrite -file C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do -append
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+quit -sim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+restart
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+add wave -position 8  sim:/tomasulim/teste
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component
+quit -sim
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+quit -sim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+vlog -reportprogress 300 -work work C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim
+# vsim +altera -Lf altera_mf_ver -do tomasulim_run_msim_rtl_verilog.do -l msim_transcript -gui work.tomasulim 
+# Loading work.tomasulim
+# Loading work.ram1pm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.programCounter
+# Loading work.instrQueue
+# Loading work.instrRegister
+# Loading work.registerFile
+# Loading work.ASRS
+# Loading work.UA
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'ID_out'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# ** Warning: (vsim-3015) C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v(172): [PCDPC] - Port size (19 or 19) does not match connection size (16) for port 'Resultado'. The port definition is at: C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v(1).
+# 
+#         Region: /tomasulim/addSub
+# do tomasulim_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/asrs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ASRS
+# 
+# Top level modules:
+# 	ASRS
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/program-counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instr-queue.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrQueue
+# 
+# Top level modules:
+# 	instrQueue
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/tomasulim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tomasulim
+# 
+# Top level modules:
+# 	tomasulim
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/ram1pm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram1pm
+# 
+# Top level modules:
+# 	ram1pm
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/instrRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instrRegister
+# 
+# Top level modules:
+# 	instrRegister
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/register-file.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/el-tomasulo/src {C:/Users/mlfca/Desktop/el-tomasulo/src/UA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UA
+# 
+# Top level modules:
+# 	UA
+# 
+# Load canceled
+do C:/Users/mlfca/Desktop/el-tomasulo/data/macro-files/Tomasulim-EX-01.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+add wave -position 8  sim:/tomasulim/teste
+run -all
+# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "memory.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
+#    Time: 0 ps  Iteration: 0  Instance: /tomasulim/instrUnit/altsyncram_component

@@ -11,7 +11,7 @@ module UA(CLK, CLR, start, ID_out, Dado1, Dado2, op, Resultado, confirmacao, bus
 	
 	reg [1:0] cont;
 	
-	always @(posedge CLK)begin
+	always @(posedge CLK, posedge CLR)begin
 		if(CLR)begin
 			cont = 2'b00;
 			Resultado = 16'b0;		

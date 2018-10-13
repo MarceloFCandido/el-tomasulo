@@ -5,6 +5,7 @@ module tomasulim(CLK, CLR);
 	reg [9:0] counter;
 	reg [9:0] maisAntiga;
 	reg [1:0] quemSai;
+	reg [3:0] teste;
 	
 	wire [4:0] addrOut;
 	wire [2:0] depR0, depR1;
@@ -22,7 +23,7 @@ module tomasulim(CLK, CLR);
 	reg [2:0] numR0,numR1;	//Indice correspondente aos registradores
 	reg wren;					//Habilita escrita do banco de registradores
 	reg [15:0] dataW;			//Dado de escrita
-	reg [2:0]depW, numW;		//Dependencia / Registrador de escrita				
+	reg [2:0] depW, numW;		//Dependencia / Registrador de escrita				
 	
 	// Variaveis para a estacao de addSub
 	wire [9:0] clockInstr[3:0];
@@ -54,12 +55,14 @@ module tomasulim(CLK, CLR);
 			dataW = 16'b0;
 			wren = 1'b0;
 			counter = 10'b0;
+			maisAntiga = 10'b1111111111;
+			// quemSai = 2'b00;
+			teste = 4'b0000;
 		end else begin		
 			case(step)
 				//PC incrementa e manda o endereco para a memoria
 				3'b000:	begin
 					step = 3'b001;
-					
 				end
 				//Saida da memoria vai para a fila
 				3'b001:	begin
@@ -123,19 +126,20 @@ module tomasulim(CLK, CLR);
 			endcase
 			// Conferindo se alguma estacao quer despachar
 			if ((despacho[0] || despacho[1] || despacho[2] || despacho[3]) && ~busyAddSub) begin
-				if (despacho[0] & maisAntiga < clockInstr[0]) begin
+				if (despacho[0] && clockInstr[0] < maisAntiga) begin
+					teste = 4'b0001;
 					maisAntiga = clockInstr[0];
 					quemSai = 2'b00;
 				end
-				if (despacho[1] & maisAntiga < clockInstr[1]) begin
+				if (despacho[1] && clockInstr[1] < maisAntiga) begin
 					maisAntiga = clockInstr[1];
 					quemSai = 2'b01;
 				end
-				if (despacho[2] & maisAntiga < clockInstr[2]) begin
+				if (despacho[2] && clockInstr[2] < maisAntiga) begin
 					maisAntiga = clockInstr[2];
 					quemSai = 2'b10;
 				end
-				if (despacho[3] & maisAntiga < clockInstr[3]) begin
+				if (despacho[3] && clockInstr[3] < maisAntiga) begin
 					maisAntiga = clockInstr[3];
 					quemSai = 2'b11;
 				end
@@ -145,7 +149,7 @@ module tomasulim(CLK, CLR);
 				Dado2 = Valor2[quemSai];
 				IDaddSub = ID_out[quemSai];
 				OPAddSub = OP[quemSai];
-				maisAntiga = 10'b1;
+				maisAntiga = 10'b1111111111;
 			end			
 		end
 	end
